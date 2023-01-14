@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  img(src=imgSRC style='width:200px; height:200px;')
+  h1= MSG
+  button(onclick="Back()") Back
+
+  script.
+    function Back() {window.location.href = '/'}

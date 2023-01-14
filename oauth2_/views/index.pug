@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  h3 Welcome to #{title}
+  button(onclick="Login_NCU()" style="margin-right: 20px;width: 100px;height: 50px;font-size: x-large;") NCU 
+  button(onclick="Login_Github()" style="margin-right: 20px;width: 100px;height: 50px;font-size: x-large;") Github 
+  button(onclick="Login_Google()" style="margin-right: 20px;width: 100px;height: 50px;font-size: x-large;") Google
+  button(onclick="Login_LINE()" style="margin-right: 20px;width: 100px;height: 50px;font-size: x-large;") LINE
+
+  script.
+    function Login_Github() {window.location.href = '/oauth2_Git'}
+    function Login_NCU() {window.location.href = '/oauth2_NCU'}
+    function Login_Google() {window.location.href = '/oauth2_Google'}
+    function Login_LINE() {window.location.href = '/oauth2_Line'}
